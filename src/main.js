@@ -83,21 +83,21 @@ let biomes =  {
     "cyan"
   ],
   hills:[
-  "brown",
-  "green",
   "green",
   "darkgrey",
   "darkgrey",
   "darkgrey",
-  "grey",
-  "grey",
+  "darkgrey",
   "grey",
   "grey",
   "grey",
   "grey",
   "lightgrey",
   "lightgrey",
-  "lightgrey"
+  "lightgrey",
+  "lightgrey",
+  "white",
+  "white"
   ]
 }
 for(let i=0;i<gridSize[0];i++){
@@ -105,7 +105,7 @@ for(let i=0;i<gridSize[0];i++){
     let cube = new Cube(i*gridSquareSize,o*gridSquareSize)
     ctx.beginPath()
     ctx.rect(i*gridSquareSize,o*gridSquareSize,gridSquareSize,gridSquareSize)
-    ctx.fillStyle = biomes.grasslands[cube.value]
+    ctx.fillStyle = biomes.hills[cube.value]
     ctx.fill()
   }
 }
