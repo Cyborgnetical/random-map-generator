@@ -31,23 +31,6 @@ class Cube{
 }
 
 perlin.seed()
-let colors = [
-  "blue",
-  "yellow",
-  "blue",
-  "blue",
-  "blue",
-  "blue",
-  "blue",
-  "blue",
-  "blue",
-  "blue",
-  "blue",
-  "grey",
-  "grey",
-  "grey",
-  "lightgrey",
-]
 
 let biomes =  {
   grasslands:[ "blue",
@@ -105,7 +88,7 @@ for(let i=0;i<gridSize[0];i++){
     let cube = new Cube(i*gridSquareSize,o*gridSquareSize)
     ctx.beginPath()
     ctx.rect(i*gridSquareSize,o*gridSquareSize,gridSquareSize,gridSquareSize)
-    ctx.fillStyle = biomes.hills[cube.value]
+    ctx.fillStyle = biomes.grasslands[cube.value]
     ctx.fill()
   }
 }
