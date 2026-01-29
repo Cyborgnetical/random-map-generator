@@ -31,10 +31,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
       - name: Set up Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v6.2.0
         with:
-          node-version: lts/*
           cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
       - name: Install dependencies
         run: pnpm ci
       - name: Build
