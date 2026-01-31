@@ -9,3 +9,14 @@ Currently it only makes a simple plans with rivers and small hills
 - Add Modifiers
 - Add a simple ui to change properties
 - Generate landmarks such as trees, rocks, flowers, etc
+
+
+# Credits
+
+Thanks to joeiddon for the perlin noise library 
+
+// repo
+https://github.com/joeiddon/perlin?tab=readme-ov-file
+
+// library itself
+https://joeiddon.github.io/perlin/perlin.js
