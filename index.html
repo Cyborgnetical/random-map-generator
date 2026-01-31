@@ -8,7 +8,21 @@
     <title>random-map-generator</title>
   </head>
   <body>
-    <canvas id="mapCanvas" width="1000" height="1000"></canvas>
+    <header style="max-height: 20vmin; border-bottom: 2px solid black; text-align: center; margin-bottom: 7.5px;">
+      <h1>Map Generator</h1>
+    </header>
+    <div style="display: grid; grid-auto-flow: column;">
+      <canvas id="mapCanvas" width="1000" height="1000"></canvas>
+      <div>
+        <span>
+          <h3>Biome</h3>
+          <button id="GrassGen">Grasslands</button>
+          <button id="OceanGen">Ocean</button>
+          <button id="IslandGen">Islands</button>
+        </span>
+        * Warning, there is a 1 second delay
+      </div>
+    </div>
     <script src="https://joeiddon.github.io/perlin/perlin.js"></script>
     <script type="module" src="./src/main.js"></script>
   </body>

@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+}
+
 #mapCanvas{
   border: 1px solid black;
+  width: 80vmin;
+  height: 80vmin;
 }
