@@ -599,3 +599,5 @@ document.getElementById("GrassGen").onclick = genGrasslands
 document.getElementById("OceanGen").onclick = genOcean
 document.getElementById("IslandGen").onclick = genIslands
 
+
+genIslands()
